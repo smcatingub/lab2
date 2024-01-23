@@ -1,14 +1,14 @@
-let currentDivId = 'chat1';
-let clickId = 'click-to-continue';
+let currentDivId = 'chat1'; //Lesson 17. Objects
+let clickId = 'click-to-continue'; //Lesson 17. Objects
 
 function showNext() {
-    const currentDiv = document.getElementById(currentDivId);
-    const currentDivNum = parseInt(currentDivId.slice(-1)); 
-    const nextDivNum = currentDivNum + 1;
-    const nextDivId = `chat${nextDivNum}`;
+    const currentDiv = document.getElementById(currentDivId); //Lesson 17. Objects
+    const currentDivNum = parseInt(currentDivId.slice(-1)); //Lesson 17. Objects
+    const nextDivNum = currentDivNum + 1; //Lesson 17. Objects
+    const nextDivId = `chat${nextDivNum}`; //Lesson 17. Objects
 
     if (currentDiv && nextDivNum <= 4) {
-        const nextDiv = document.getElementById(nextDivId);
+        const nextDiv = document.getElementById(nextDivId); //Lesson 17. Objects
         if (nextDiv) {
             setTimeout(() => {
                 nextDiv.classList.remove('hidden');
@@ -16,7 +16,7 @@ function showNext() {
             }, 250)
         }
     } else {
-        const clickElement = document.getElementById(clickId);
+        const clickElement = document.getElementById(clickId); //Lesson 17. Objects
         if (clickElement) {
         clickElement.classList.add('hidden');
         }
