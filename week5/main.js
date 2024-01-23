@@ -1,7 +1,7 @@
 let currentDivId = 'chat1'; //Lesson 17. Objects
 let clickId = 'click-to-continue'; //Lesson 17. Objects
 
-function showNext() {
+function showNext() { //Lesson 18. Functions
     const currentDiv = document.getElementById(currentDivId); //Lesson 17. Objects
     const currentDivNum = parseInt(currentDivId.slice(-1)); //Lesson 17. Objects
     const nextDivNum = currentDivNum + 1; //Lesson 17. Objects
