@@ -2,9 +2,7 @@ let currentDivId = 'chat1';
 let clickId = 'click-to-continue';
 
 function showNext() {
-    //console.log('Clicked!');
     const currentDiv = document.getElementById(currentDivId);
-    //console.log('Current div:', currentDivId);
     const currentDivNum = parseInt(currentDivId.slice(-1)); 
     const nextDivNum = currentDivNum + 1;
     const nextDivId = `chat${nextDivNum}`;
