@@ -10,10 +10,10 @@ function showNext() { //Lesson 18. Functions
     if (currentDiv && nextDivNum <= 4) {
         const nextDiv = document.getElementById(nextDivId); //Lesson 17. Objects
         if (nextDiv) {
-            setTimeout(() => {
-                nextDiv.classList.remove('hidden');
-                currentDivId = nextDivId;
-            }, 250)
+            setTimeout(() => { //Lesson 21. Async
+                nextDiv.classList.remove('hidden'); //Lesson 21. Async
+                currentDivId = nextDivId; //Lesson 21. Async
+            }, 250) //Lesson 21. Async
         }
     } else {
         const clickElement = document.getElementById(clickId); //Lesson 17. Objects
