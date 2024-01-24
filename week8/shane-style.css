@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: dogicapixel;
+    src: url(resources/fonts/dogica/TTF/dogicapixel.ttf);
+}
+
+@font-face {
+    font-family: league-reg;
+    src: url(resources/fonts/League_Spartan/LeagueSpartan-Regular.ttf);
+}
+
+@font-face {
+    font-family: league-bold;
+    src: url(resources/fonts/League_Spartan/LeagueSpartan-Bold.ttf);
+}
+
+body {
+    background-image: url("https://i.imgur.com/K68TgzS.png");
+	background-size: 100%;
+}
+#navbar {
+    background-image: url("resources/header bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: sticky;
+    width: 100vw;
+    overflow: hidden;
+}
+#folders {
+    max-height: 6vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 24vw;
+    padding-right: 12vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    overflow: hidden;
+}
+.nav {
+    width: 3.5vw;
+    margin: 1vw;
+}
+div {
+    display: block;
+}
+.icons {
+    position: relative;
+    display: inline-block;
+    padding-top: 1vw;
+}
+.orig-image, .hover-image {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    height: auto;
+}
+.hover-image {
+    position: absolute;
+    top: 1vw;
+    left: 0;
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .orig-image {
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .hover-image {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* CONTENT */
+
+div#test {
+    border: 5px;
+    border-color: white;
+}
