@@ -73,6 +73,11 @@
                     <p><span class="name">shane !! </span><span class="at">@shannelien</span>
                     <br><span class="post">i was born on the 29th of december 2003, which meaaaans i am already <?php $year = 2003; $current_year = 2023; echo $current_year - $year; ?> years old T_T.</span></p>
             </div>
-            <?php $isThisWebpageDone = false; var_dump($isThisWebpageDone) ?>
+            <?php $isThisWebpageDone = false; var_dump($isThisWebpageDone); 
+            if ($isThisWebpageDone) {
+                echo "Head over to the next folder to learn more about me.";
+            } else {
+                echo "This webpage is still incomplete and under construction. Sorry :(";
+            } ?>
         </div> 
     </div>
