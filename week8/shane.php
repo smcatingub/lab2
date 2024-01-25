@@ -52,7 +52,7 @@
                     <br><span class="post">hello ~~ my name's <?php $owner_name = "Shannelien Catingub"; echo $owner_name; ?> ^-^ but please, i don't care if we're not that close, just call me <strong>Shane.</strong>
                     i've never really liked my name because it's too.. <em>unique.</em></span></p><br>
                 </div>
-                <img class="reactions" src="resources/windows/reactions.png">
+                <img id="reaction1" src="resources/windows/reactions.png">
             </div>
             <div id="socmed-content2">
                 <div class="icon">
@@ -63,6 +63,15 @@
                     <br><span class="post">anywayyy, this is me! i don't take a lot of pictures so idrk what to put here x-x. i don't even look like that irl since i dont wear my contacts that much anymore. <em><strong>( hover to see me ;0 )</strong></em></span></p>
                 </div> 
                 <img id="boo" src="resources/windows/my melody phone.gif">
+                <img id="reaction2" src="resources/windows/reactions.png">
             </div>
-        </div>
+            <div id="socmed-content3">
+                <div class="icon">
+                    <img class="ena-icon" src="resources/windows/ena icon pixel.png">
+                </div>
+                <div class="user">
+                    <p><span class="name">shane !! </span><span class="at">@shannelien</span>
+                    <br><span class="post">i was born on the 29th of december 2003, which meaaaans i am already <?php $year = 2003; $current_year = 2023; echo $current_year - $year; ?> years old T_T.</span></p>
+            </div>  
+        </div> 
     </div>
