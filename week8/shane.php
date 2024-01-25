@@ -49,7 +49,7 @@
                 </div>
                 <div class="user">
                     <p><span class="name">shane !! </span><span class="at">@shannelien</span>
-                    <br><span class="post">hello ~~ my name's <?php $owner_name = "Shannelien Catingub"; ?> ^-^ but please, i don't care if we're not that close, just call me <strong>Shane.</strong>
+                    <br><span class="post">hello ~~ my name's <?php $owner_name = "Shannelien Catingub"; echo $owner_name; ?> ^-^ but please, i don't care if we're not that close, just call me <strong>Shane.</strong>
                     i've never really liked my name because it's too.. <em>unique.</em></span></p><br>
                 </div>
                 <img class="reactions" src="resources/windows/reactions.png">
