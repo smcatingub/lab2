@@ -11,7 +11,7 @@
 <body>
     <div id="navbar">
         <div id="folders">
-            <a class="icons" href="#">
+            <a class="icons" href="index.html">
                 <img class="nav orig-image" src="resources/folder icons/1 home.png">
                 <img class="nav hover-image" src="resources/folder icons/2 home.png">
             </a>
@@ -40,6 +40,29 @@
 
     <!-- CONTENT -->
 
-    <div id="test">
-        <p>helo</p>
+    <div id="shane-content">
+        <div id="socmed-win">
+            <img id="socmed-win" src="resources/windows/social window.png">
+            <div id="socmed-content1">
+                <div class="icon">
+                    <img class="ena-icon" src="resources/windows/ena icon pixel.png">
+                </div>
+                <div class="user">
+                    <p><span class="name">shane !! </span><span class="at">@shannelien</span>
+                    <br><span class="post">hello ~~ my name's <?php $owner_name = "Shannelien Catingub"; ?> ^-^ but please, i don't care if we're not that close, just call me <strong>Shane.</strong>
+                    i've never really liked my name because it's too.. <em>unique.</em></span></p><br>
+                </div>
+                <img class="reactions" src="resources/windows/reactions.png">
+            </div>
+            <div id="socmed-content2">
+                <div class="icon">
+                    <img class="ena-icon" src="resources/windows/ena icon pixel.png">
+                </div>
+                <div class="user">
+                    <p><span class="name">shane !! </span><span class="at">@shannelien</span>
+                    <br><span class="post">anywayyy, this is me! i don't take a lot of pictures so idrk what to put here x-x. i don't even look like that irl since i dont wear my contacts that much anymore. <em><strong>( hover to see me ;0 )</strong></em></span></p>
+                </div> 
+                <img id="boo" src="resources/windows/my melody phone.gif">
+            </div>
+        </div>
     </div>

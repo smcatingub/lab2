@@ -74,7 +74,82 @@ div {
 
 /* CONTENT */
 
-div#test {
-    border: 5px;
-    border-color: white;
+div#shane-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+div#socmed-win {
+    position: relative;
+}
+img#socmed-win {
+    width: 60vw;
+}
+div#socmed-content1 {
+    display: flex;
+    position: absolute;
+    top: 5vw;
+    left: 5vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 50vw;
+}
+div#socmed-content2 {
+    display: flex;
+    position: absolute;
+    top: 11vw;
+    left: 5vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 50vw;
+}
+div.icon {
+    flex-grow: 1;
+    position: relative;
+    display: inline-flex;
+}
+img.ena-icon {
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+}
+div.user {
+    flex-grow: 9;
+    position: relative;
+    display: inline-flex;
+    font-family: dogicapixel;
+    font-size: 0.75vw;
+    line-height: 1.5;
+}
+.reactions {
+    position: absolute;
+    top: 3.9vw;
+    left: 2.8vw;
+    transform: scale(.85);
+}
+
+/* SPANS */
+
+.name {
+    color: #7c7eff;
+}
+.post {
+    color: #8800ff;
+    font-size: 0.65vw;
+}
+.at {
+    color: #0004ff;
+}
+
+#boo {
+    position: relative;
+    /*top: 3.5vw;*/
+    width: 15vw;
+    height: auto;
+    content: url(resources/windows/my\ melody\ phone.gif);
+}
+#boo:hover {
+    content: url(resources/windows/boo.gif);
 }
