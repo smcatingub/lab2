@@ -80,7 +80,7 @@ div {
 div#home-content {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 1vw;
     position: relative;
 }
 div#welcome-win {
@@ -201,4 +201,22 @@ div#click-to-continue {
     animation: blink 1.5s linear infinite;
     animation-direction: alternate;
     animation-delay: 2.5s;
+}
+
+/* FOOTER */
+
+#footer-content {
+    margin-top: 1.8vw;
+    width: 100vw;
+}
+div#pink {
+    background-color: #F4B9B8;
+    max-width: 100vw;
+    max-height: 1vw;
+    margin-bottom: 1vw;
+}
+div#contact-icons {
+    background-color: #141414;
+    max-width: 100vw;
+    padding: 1vw;
 }

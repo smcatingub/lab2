@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: dogicapixel;
+    src: url(../resources/fonts/dogica/TTF/dogicapixel.ttf);
+}
+
+@font-face {
+    font-family: league-reg;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Regular.ttf);
+}
+@font-face {
+    font-family: league-bold;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Bold.ttf);
+}
+@keyframes blink {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+}
+@keyframes fade-in {
+    to {opacity: 1;}
+}
+body {
+    background-image: url("https://i.imgur.com/K68TgzS.png");
+	background-size: 100%;
+}
+#navbar {
+    background-image: url("../resources/header bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: sticky;
+    width: 100vw;
+    overflow: hidden;
+}
+#folders {
+    max-height: 6vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 24vw;
+    padding-right: 12vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    overflow: hidden;
+}
+.nav {
+    width: 3.5vw;
+    margin: 1vw;
+}
+div {
+    display: block;
+}
+.icons {
+    position: relative;
+    display: inline-block;
+    padding-top: 1vw;
+}
+.orig-image, .hover-image {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    height: auto;
+}
+.hover-image {
+    position: absolute;
+    top: 1vw;
+    left: 0;
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .orig-image {
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .hover-image {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* content */
+
+.error {
+    color: #FF0000;
+    font-family: dogicapixel;
+    font-size: 0.5vw;
+}
+
+#flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+#form-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 2vw;
+    background-color: #fdd8d7;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    border-radius: 15px;
+}
+
+.form-titles {
+    display: block;
+    font-family: dogicapixel;
+    font-size: 0.7vw;
+    color: #CA8EFF;
+    line-height: 1.5;
+}
+
+#form-form input[type="text"], #form-form textarea {
+    width: 20vw;
+    height: 2vw;
+    font-size: 0.7vw;
+    font-family: dogicapixel;
+    color: #0004ff;
+    border-radius: 10px;
+    padding: 0.2vw;
+    line-height: 1.5;
+    background-color: #fce7e7;
+}
+
+#form-form textarea {
+    height: 5vw;
+}
+
+.form-gender {
+    font-family: dogicapixel;
+    font-size: 0.7vw;
+    color: #8f51c5;
+    padding-left: 0.5vw;
+}
+
+#form-form input[type="radio"] {
+    width: 1vw;
+    margin-left: 1vw;
+}
+
+#form-form input[type="submit"] {
+    font-family: dogicapixel;
+    font-size: 0.8vw;
+    padding: 0.7vw;
+    color: #521b81;
+    background-color: #f0dfff;
+    border-radius: 15px;
+    margin-left: 7.5vw;
+}
+
+h2 {
+    font-family: dogicapixel;
+    font-size: 1vw;
+    color: #521b81;
+}
