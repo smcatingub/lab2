@@ -4,16 +4,16 @@
 }
 @font-face {
     font-family: dogicapixel;
-    src: url(resources/fonts/dogica/TTF/dogicapixel.ttf);
+    src: url(../resources/fonts/dogica/TTF/dogicapixel.ttf);
 }
 
 @font-face {
     font-family: league-reg;
-    src: url(resources/fonts/League_Spartan/LeagueSpartan-Regular.ttf);
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Regular.ttf);
 }
 @font-face {
     font-family: league-bold;
-    src: url(resources/fonts/League_Spartan/LeagueSpartan-Bold.ttf);
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Bold.ttf);
 }
 @keyframes blink {
     0% {opacity: 0;}
@@ -27,7 +27,7 @@ body {
 	background-size: 100%;
 }
 #navbar {
-    background-image: url("resources/header bg.png");
+    background-image: url("../resources/header bg.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: sticky;

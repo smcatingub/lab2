@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: dogicapixel;
+    src: url(../resources/fonts/dogica/TTF/dogicapixel.ttf);
+}
+
+@font-face {
+    font-family: league-reg;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Regular.ttf);
+}
+
+@font-face {
+    font-family: league-bold;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Bold.ttf);
+}
+
+body {
+    background-image: url("https://i.imgur.com/K68TgzS.png");
+	background-size: 100%;
+}
+#navbar {
+    background-image: url("../resources/header bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: sticky;
+    width: 100vw;
+    overflow: hidden;
+}
+#folders {
+    max-height: 6vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 24vw;
+    padding-right: 12vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    overflow: hidden;
+}
+.nav {
+    width: 3.5vw;
+    margin: 1vw;
+}
+div {
+    display: block;
+}
+.icons {
+    position: relative;
+    display: inline-block;
+    padding-top: 1vw;
+}
+.orig-image, .hover-image {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    height: auto;
+}
+.hover-image {
+    position: absolute;
+    top: 1vw;
+    left: 0;
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .orig-image {
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .hover-image {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* CONTENT */
+
+div#shane-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+div#socmed-win {
+    position: relative;
+}
+img#socmed-win {
+    width: 60vw;
+}
+#socmed-container {
+    min-width: 56vw;
+    max-width: 56vw;
+    min-height: 28vw;
+    max-height: 28vw;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 4.5vw;
+    left: 1.8vw;
+    align-items: center;
+}
+div.icon {
+    flex-grow: 1;
+    position: relative;
+    display: inline-flex;
+}
+img.ena-icon {
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+}
+div.user {
+    flex-grow: 9;
+    position: relative;
+    display: inline-flex;
+    font-family: dogicapixel;
+    font-size: 0.75vw;
+    line-height: 1.5;
+}
+#boo {
+    position: relative;
+    /*top: 3.5vw;*/
+    bottom: 1vw;
+    width: 8.5vw;
+    height: auto;
+    content: url(../resources/windows/my\ melody\ phone.gif);
+}
+#boo:hover {
+    content: url(../resources/windows/boo.gif);
+}
+
+/* SOCMED-CONTENTS */
+
+div#socmed-content1 {
+    display: flex;
+    position: absolute;
+    top: 1vw;
+    left: 3vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 50vw;
+}
+div#socmed-content2 {
+    display: flex;
+    position: absolute;
+    top: 7vw;
+    left: 3vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 50vw;
+}
+div#socmed-content3 {
+    display: flex;
+    position: absolute;
+    top: 14.3vw;
+    left: 3vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 50vw;
+}
+div#socmed-content4 {
+    display: flex;
+    position: absolute;
+    top: 19.4vw;
+    left: 3vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 50vw;
+}
+div#socmed-content5 {
+    display: flex;
+    position: absolute;
+    top: 26.3vw;
+    left: 3vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 50vw;
+}
+div#socmed-content6 {
+    display: flex;
+    position: absolute;
+    top: 32.3vw;
+    left: 3vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 50vw;
+}
+div#socmed-content7 {
+    display: flex;
+    position: absolute;
+    top: 38vw;
+    left: 3vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 50vw;
+}
+div#socmed-content8 {
+    display: flex;
+    position: absolute;
+    top: 43vw;
+    left: 3vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 50vw;
+}
+div#socmed-content9 {
+    display: flex;
+    position: absolute;
+    top: 48.8vw;
+    left: 3vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 54vw;
+    max-height: 50vw;
+}
+div#socmed-content10 {
+    display: flex;
+    position: absolute;
+    top: 54.8vw;
+    left: 3vw;
+    gap: 1vw;
+    justify-content: center;
+    max-width: 54vw;
+    max-height: 50vw;
+}
+
+/* REACTIONS */
+
+#reaction1 {
+    position: absolute;
+    top: 3.9vw;
+    left: 2.8vw;
+    transform: scale(.85);
+}
+#reaction2 {
+    position: absolute;
+    top: 5.3vw;
+    left: 2.8vw;
+    transform: scale(.85);
+}
+#reaction3 {
+    position: absolute;
+    top: 3.2vw;
+    left: 2.8vw;
+    transform: scale(.85);
+}
+#reaction4 {
+    position: absolute;
+    top: 4.8vw;
+    left: 2.8vw;
+    transform: scale(.85);
+}
+#reaction5 {
+    position: absolute;
+    top: 3.9vw;
+    left: 2.8vw;
+    transform: scale(.85);
+}
+#reaction6 {
+    position: absolute;
+    top: 3.9vw;
+    left: 2.8vw;
+    transform: scale(.85);
+}
+#reaction7 {
+    position: absolute;
+    top: 3.2vw;
+    left: 2.8vw;
+    transform: scale(.85);
+}
+#reaction8 {
+    position: absolute;
+    top: 3.8vw;
+    left: 2.8vw;
+    transform: scale(.85);
+}
+#reaction9 {
+    position: absolute;
+    top: 4vw;
+    left: 2.8vw;
+    transform: scale(.85);
+}
+#reaction10 {
+    position: absolute;
+    top: 2.9vw;
+    left: 2.8vw;
+    transform: scale(.85);
+}
+
+/* SPANS */
+
+.name {
+    color: #7c7eff;
+}
+.post {
+    color: #8800ff;
+    font-size: 0.65vw;
+}
+.at {
+    color: #0004ff;
+}
+

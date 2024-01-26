@@ -49,7 +49,7 @@
                 </div>
                 <div class="user">
                     <p><span class="name">shane !! </span><span class="at">@shannelien</span>
-                    <br><span class="post">hello ~~ my name's <?php $owner_name = "Shannelien Catingub"; echo $owner_name; ?> ^-^ but please, i don't care if we're not that close, just call me <strong>Shane.</strong>
+                    <br><span class="post">hello ~~ my name's <!--?php $owner_name = "Shannelien Catingub"; echo $owner_name; ?-->Shannelien Catingub ^-^ but please, i don't care if we're not that close, just call me <strong>Shane.</strong>
                     i've never really liked my name because it's too.. <em>unique.</em></span></p><br>
                 </div>
                 <img id="reaction1" src="resources/windows/reactions.png">
@@ -71,13 +71,7 @@
                 </div>
                 <div class="user">
                     <p><span class="name">shane !! </span><span class="at">@shannelien</span>
-                    <br><span class="post">i was born on the 29th of december 2003, which meaaaans i am already <?php $year = 2003; $current_year = 2023; echo $current_year - $year; ?> years old T_T.</span></p>
+                    <br><span class="post">i was born on the 29th of december 2003, which meaaaans i am already <!--?php $year = 2003; $current_year = 2023; echo $current_year - $year; ?-->20 years old T_T.</span></p>
             </div>
-            <?php $isThisWebpageDone = false; var_dump($isThisWebpageDone); 
-            if ($isThisWebpageDone) {
-                echo "Head over to the next folder to learn more about me.";
-            } else {
-                echo "This webpage is still incomplete and under construction. Sorry :(";
-            } ?>
         </div> 
     </div>
