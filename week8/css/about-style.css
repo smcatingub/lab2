@@ -108,7 +108,7 @@ div#abts-content {
     grid-auto-flow: row;
     position: absolute;
     top: 0;
-    margin-top: 3vw;
+    margin-top: 2.8vw;
     margin-left: 1.5vw;
     width: 14vw;
     max-height: 13.5vw;
@@ -116,7 +116,7 @@ div#abts-content {
 
 a.abt-icons {
     display: block;
-    transform: scale(0.5);
+    transform: scale(0.6);
 }
 a.abt-icons-top img {
     width: 100%;
@@ -124,6 +124,44 @@ a.abt-icons-top img {
 a.abt-icons-bot img {
     width: 100%;
     margin-top: -1.5vw;
+}
+
+/* tooltips */
+
+a.abt-icons-top::before {
+    --scale: 0;
+    position: absolute;
+    top: -0.5vw;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    left: 50%;
+    transition: 200ms transform;
+    transform-origin: bottom center;
+}
+
+a.abt-icons-bot::before {
+    --scale: 0;
+    position: absolute;
+    top: -2vw;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    left: 50%;
+    transition: 200ms transform;
+    transform-origin: bottom center;
+}
+
+a.abt-icons::before {
+    content: attr(data-tooltip);
+    color: #ffffff;
+    background: #9d69ca;
+    padding: 1vw;
+    width: max-content;
+    border-radius: 15px;
+    text-align: center;
+    font-family: dogicapixel;
+    font-size: 0.8vw;
+}
+
+a.abt-icons:hover::before {
+    --scale: 1;
 }
 
 /* FOOTER */
