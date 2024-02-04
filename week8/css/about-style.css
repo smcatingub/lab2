@@ -166,6 +166,8 @@ a.abt-icons:hover::before {
 
 /* big window */
 
+/* initial */
+
 div#select {
     display: flex;
     justify-content: center;
@@ -191,6 +193,82 @@ div#select p {
     animation: blink 2s linear infinite;
     animation-direction: alternate;
     animation-delay: 2.5s;
+}
+
+/* basic info */
+
+div#about-basic {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+div#basic-info {
+    display: flex;
+    width: 52vw;
+    margin-left: 1.5vw;
+    height: 25.5vw;
+    position: absolute;
+    top: 3.5vw;
+    gap: 0.7vw;
+}
+
+div#basic-left {
+    display: flex;
+    flex-direction: column;
+    gap: 01vw;
+    width: 15vw;
+    height: 25.5vw;
+}
+
+img#stripes {
+    max-height: 2.5vw;
+    width: 100%;
+    box-shadow: 3px 3px #9d69ca;
+}
+
+img#mymelo {
+    box-shadow: 3px 3px #9d69ca;
+}
+
+img#banner-basic {
+    box-shadow: 3px 3px #9d69ca;
+}
+
+div#basic-right {
+    display: flex;
+    flex-direction: column;
+    width: 36vw;
+    height: 25.5vw;
+    gap: 0.5vw;
+}
+
+div.right {
+    background-color: #ffdef7;
+    max-height: 3.8vw;
+    box-shadow: 3px 3px #9d69ca;
+}
+
+div.right p {
+    display: flex;
+    flex-direction: column;
+    height: 4.15vw;
+    padding: 0.7vw;
+    line-height: 1.7;
+    position: relative;
+    font-family: dogicapixel;
+}
+
+span.right-title {
+    font-size: 0.6vw;
+    color: #360060;
+}
+
+span.right-content {
+    font-size: 0.7vw;
+    padding-left: 1.4vw;
+    color: #ff5487;
+    text-decoration: underline;
 }
 
 /* FOOTER */

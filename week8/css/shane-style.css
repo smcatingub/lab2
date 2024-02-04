@@ -273,60 +273,70 @@ div#socmed-content10 {
     top: 3.9vw;
     left: 2.8vw;
     transform: scale(.85);
+    max-width: 9vw;
 }
 #reaction2 {
     position: absolute;
     top: 5.3vw;
     left: 2.8vw;
     transform: scale(.85);
+    max-width: 9vw;
 }
 #reaction3 {
     position: absolute;
     top: 3.2vw;
     left: 2.8vw;
     transform: scale(.85);
+    max-width: 9vw;
 }
 #reaction4 {
     position: absolute;
     top: 4.8vw;
     left: 2.8vw;
     transform: scale(.85);
+    max-width: 9vw;
 }
 #reaction5 {
     position: absolute;
     top: 3.9vw;
     left: 2.8vw;
     transform: scale(.85);
+    max-width: 9vw;
 }
 #reaction6 {
     position: absolute;
     top: 3.9vw;
     left: 2.8vw;
     transform: scale(.85);
+    max-width: 9vw;
 }
 #reaction7 {
     position: absolute;
     top: 3.2vw;
     left: 2.8vw;
     transform: scale(.85);
+    max-width: 9vw;
 }
 #reaction8 {
     position: absolute;
     top: 3.8vw;
     left: 2.8vw;
     transform: scale(.85);
+    max-width: 9vw;
 }
 #reaction9 {
     position: absolute;
     top: 4vw;
     left: 2.8vw;
     transform: scale(.85);
+    max-width: 9vw;
 }
 #reaction10 {
     position: absolute;
     top: 2.9vw;
     left: 2.8vw;
     transform: scale(.85);
+    max-width: 9vw;
 }
 
 /* SPANS */
