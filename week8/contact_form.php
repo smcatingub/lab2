@@ -139,10 +139,17 @@
 
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "myDB";
+		// for xampp localhost
+                // $servername = "localhost";
+                // $username = "root";
+                // $password = "";
+                // $dbname = "myDB";
+
+		// for socitcloud
+		$servername = "localhost";
+		$username = "webprogmi222_sf221";
+		$password = "xE*Y2nleNVvZm[!!";
+		$dbname = "webprogmi222_sf221";
 
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
