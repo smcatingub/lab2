@@ -15,6 +15,10 @@
     font-family: league-bold;
     src: url(../resources/fonts/League_Spartan/LeagueSpartan-Bold.ttf);
 }
+@font-face {
+    font-family: league-light;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Light.ttf);
+}
 @keyframes blink {
     0% {opacity: 0;}
     50% {opacity: 1;}
@@ -274,6 +278,12 @@ span.right-content {
 
 /* EDUCATION */
 
+div#about-educ {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
 div#educ-whole {
     display: flex;
     width: 52vw;
@@ -283,6 +293,7 @@ div#educ-whole {
     top: 3.5vw;
     gap: 0.5vw;
     align-items: center;
+    justify-content: center;
 }
 
 div.card {
@@ -301,30 +312,44 @@ img.card-image {
 }
 
 div.card-body {
-    min-width: 11vw;
-    max-width: 11vw;
-    min-height: 16vw;
+    width: 100%;
+    max-width: 8.5vw;
+    min-height: 13.5vw;
     max-height: 16vw;
     top: 0;
-    right: 0;
+    right: -100%;
     position: absolute;
-    background-color: #2f004b80;
+    background-color: #44016b48;
     backdrop-filter: blur(0.15vw);
     color: #fff;
     font-family: league-reg;
     padding: 1.25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.card:hover .card-body {
+    right: 0;
 }
 
 .card-title {
     font-size: 2vw;
+    font-family: league-bold;
 }
 
 .card-subtitle {
-    font-size: 1.25vw;
+    font-size: 1vw;
+    font-family: league-reg;
+    margin-top: 0.2vw;
 }
 
 .card-info {
-    font-size: vw;
+    font-size: 0.8vw;
+    margin: 2vw 0;
+    font-family: league-light;
+    line-height: 1.2;
 }
 
 
