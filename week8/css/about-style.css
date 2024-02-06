@@ -173,7 +173,7 @@ a.abt-icons:hover::before {
 /* initial */
 
 div#select {
-    visibility: hidden;
+    /* visibility: hidden; */
     display: flex;
     justify-content: center;
     flex-direction: column;
