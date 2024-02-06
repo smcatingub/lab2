@@ -169,6 +169,7 @@ a.abt-icons:hover::before {
 /* initial */
 
 div#select {
+    visibility: hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -270,6 +271,63 @@ span.right-content {
     color: #ff5487;
     text-decoration: underline;
 }
+
+/* EDUCATION */
+
+div#educ-whole {
+    display: flex;
+    width: 52vw;
+    margin-left: 1.5vw;
+    height: 25.5vw;
+    position: absolute;
+    top: 3.5vw;
+    gap: 0.5vw;
+    align-items: center;
+}
+
+div.card {
+    width: 11vw;
+    height: 16vw;
+    overflow: hidden;
+    border-radius: 1vw;
+    border: 0.4vw solid #cb8cff;
+    position: relative;
+}
+
+img.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.card-body {
+    min-width: 11vw;
+    max-width: 11vw;
+    min-height: 16vw;
+    max-height: 16vw;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #2f004b80;
+    backdrop-filter: blur(0.15vw);
+    color: #fff;
+    font-family: league-reg;
+    padding: 1.25vw;
+}
+
+.card-title {
+    font-size: 2vw;
+}
+
+.card-subtitle {
+    font-size: 1.25vw;
+}
+
+.card-info {
+    font-size: vw;
+}
+
+
 
 /* FOOTER */
 
