@@ -352,7 +352,80 @@ div.card-body {
     line-height: 1.2;
 }
 
+/* WHY IT */
 
+div#about-whyit {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+#whyit-whole {
+    display: flex;
+    width: 52vw;
+    margin-left: 1.5vw;
+    height: 25.5vw;
+    position: absolute;
+    top: 3.5vw;
+    gap: 0.7vw;
+}
+
+#whyit-left {
+    display: flex;
+    flex-direction: column;
+    width: 36vw;
+    height: 25.5vw;
+    gap: 0.5vw;
+}
+
+#whyit-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9vw;
+    width: 15vw;
+    height: 25.5vw;
+}
+
+#purple-banner {
+    filter: drop-shadow(3px 3px rgba(110, 33, 161, 0.829));
+}
+
+.why-shadow {
+    box-shadow: 3px 3px rgba(110, 33, 161, 0.829);
+}
+
+div.left {
+    background-color: #ffffff;
+}
+
+div.left p {
+    display: flex;
+    flex-direction: column;
+    padding: 0.7vw;
+    line-height: 1.7;
+    position: relative;
+    font-family: dogicapixel;
+}
+
+span.left-content {
+    font-size: 0.6vw;
+    padding-left: 1.4vw;
+    color: #7832e9;
+    text-decoration: underline;
+}
+
+.why-bottom {
+    display: flex;
+    justify-content: center;
+    width: 36vw;
+    max-height: 4vw;
+}
+
+.why-bottom img {
+    position: relative;
+    max-height: 4vw;
+    width: max-content;
+}
 
 /* FOOTER */
 
