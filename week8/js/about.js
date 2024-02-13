@@ -56,3 +56,19 @@ btn_whyIT.addEventListener("click", ()=>{
     div_aboutfuture.style.visibility = "hidden";
     div_aboutfuture.style.opacity = "0";
 });
+
+btn_future.addEventListener("click", ()=>{
+    div_select.style.visibility = "hidden";
+
+    div_aboutbasic.style.visibility = "hidden";
+    div_aboutbasic.style.opacity = "0";
+
+    div_abouteduc.style.visibility = "hidden";
+    div_abouteduc.style.opacity = "0";
+
+    div_aboutwhyit.style.visibility = "hidden"
+    div_aboutwhyit.style.opacity = "0";
+
+    div_aboutfuture.style.visibility = "visible";
+    div_aboutfuture.style.opacity = "1";
+});
