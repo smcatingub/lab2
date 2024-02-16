@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: dogicapixel;
+    src: url(../resources/fonts/dogica/TTF/dogicapixel.ttf);
+}
+
+@font-face {
+    font-family: league-reg;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Regular.ttf);
+}
+@font-face {
+    font-family: league-bold;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Bold.ttf);
+}
+@font-face {
+    font-family: league-light;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Light.ttf);
+}
+@keyframes blink {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+}
+@keyframes fade-in {
+    to {opacity: 1;}
+}
+body {
+    background-image: url("../resources/main\ background.png");
+	background-size: 100%;
+}
+#navbar {
+    background-image: url("../resources/header bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: sticky;
+    width: 100vw;
+    overflow: hidden;
+}
+#folders {
+    max-height: 6vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 24vw;
+    padding-right: 12vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    overflow: hidden;
+}
+.nav {
+    width: 3.5vw;
+    margin: 1vw;
+}
+div {
+    display: block;
+}
+.icons {
+    position: relative;
+    display: inline-block;
+    padding-top: 1vw;
+}
+.orig-image, .hover-image {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    height: auto;
+}
+.hover-image {
+    position: absolute;
+    top: 1vw;
+    left: 0;
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .orig-image {
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .hover-image {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* CONTENT */
+
+div#interests-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    position: relative;
+}
+
+div#interests-win {
+    position: relative;
+}
+
+img#interests-win {
+    width: 60vw;
+}
+
+/* INITIAL WINDOW */
+
+div#interests-container1 {
+    /* visibility: hidden; */
+    display: flex;
+    justify-content: center;
+    min-width: 56.5vw;
+    max-width: 56.5vw;
+    min-height: 28.3vw;
+    max-height: 28.3vw;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 4.5vw;
+    left: 1.8vw;
+    align-items: center;
+    transition: opacity 0.1s ease-in-out;
+}
+
+img#left-interest-img {
+    max-height: 23vw;
+    padding-right: 2vw;
+}
+
+div#right-interest {
+    font-family: dogicapixel;
+    font-size: 1vw;
+    min-width: 10vw;
+}
+
+.int-btn {
+    background: none;
+    padding: 0.5vw 1vw;
+    transition: color 0.4s linear;
+    position: relative;
+    text-decoration: none;
+    color: #493a83;  
+    z-index: 1;  
+}
+
+.int-btn:hover {
+    color: #eeeaff;
+    padding-left: 2vw;
+}
+
+.int-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #493a83;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+} 
+
+.btnx::before {
+    transform: scaleX(0);
+}
+.btnx:hover::before {
+    transform: scaleX(1);
+}
+
+/* LIKES */
+
+div#interests-container2 {
+    visibility: hidden;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    min-width: 56.5vw;
+    max-width: 56.5vw;
+    min-height: 28.3vw;
+    max-height: 28.3vw;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 4.5vw;
+    left: 1.8vw;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.menu {
+    min-width: 56.5vw;
+    max-width: 56.5vw;
+}
+
+.interests-content {
+    min-width: 56.5vw;
+    max-width: 56.5vw;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 18vw);
+    grid-auto-rows: 20.5vw;
+    justify-content: center;
+    align-items: center;
+    font-family: dogicapixel;
+    line-height: 1.3;
+    font-size: 0.7vw;
+    color: #6351aa;
+}
+
+.div-imgs {
+    width: 17vw;
+}
+
+.wahaha {
+    color: #D1B7E6;
+}
+
+/* DISLIKES */
+
+div#interests-container3 {
+    visibility: hidden;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    min-width: 56.5vw;
+    max-width: 56.5vw;
+    min-height: 28.3vw;
+    max-height: 28.3vw;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 4.5vw;
+    left: 1.8vw;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+/* HOBBIES */
+
+div#interests-container4 {
+    visibility: hidden;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    min-width: 56.5vw;
+    max-width: 56.5vw;
+    min-height: 28.3vw;
+    max-height: 28.3vw;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 4.5vw;
+    left: 1.8vw;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+/* PEOPLE */
+
+div#interests-container5 {
+    visibility: hidden;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    min-width: 57vw;
+    max-width: 57vw;
+    min-height: 28.3vw;
+    max-height: 28.3vw;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 4.5vw;
+    left: 1.8vw;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.people-content {
+    min-width: 56.5vw;
+    max-width: 56.5vw;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 14vw);
+    grid-auto-rows: 17vw;
+    justify-content: center;
+    align-items: center;
+    font-family: dogicapixel;
+    line-height: 1.3;
+    font-size: 0.7vw;
+    color: #6351aa;
+    
+}
+
+.ppl {
+    width: 12.5vw;
+}
