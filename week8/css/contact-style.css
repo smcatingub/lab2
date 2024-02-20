@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: dogicapixel;
+    src: url(../resources/fonts/dogica/TTF/dogicapixel.ttf);
+}
+
+@font-face {
+    font-family: league-reg;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Regular.ttf);
+}
+@font-face {
+    font-family: league-bold;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Bold.ttf);
+}
+@font-face {
+    font-family: league-light;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Light.ttf);
+}
+@keyframes blink {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+}
+@keyframes fade-in {
+    to {opacity: 1;}
+}
+body {
+    background-image: url("../resources/main\ background.png");
+	background-size: 100%;
+}
+#navbar {
+    background-image: url("../resources/header bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: sticky;
+    width: 100vw;
+    overflow: hidden;
+}
+#folders {
+    max-height: 6vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 24vw;
+    padding-right: 12vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    overflow: hidden;
+}
+.nav {
+    width: 3.5vw;
+    margin: 1vw;
+}
+div {
+    display: block;
+}
+.icons {
+    position: relative;
+    display: inline-block;
+    padding-top: 1vw;
+}
+.orig-image, .hover-image {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    height: auto;
+}
+.hover-image {
+    position: absolute;
+    top: 1vw;
+    left: 0;
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .orig-image {
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .hover-image {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* CONTENT */
+
+div#contact-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    position: relative;
+}
+
+div#contact-win {
+    position: relative;
+}
+
+img#contact-win {
+    width: 60vw;
+}
+
+div#contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 56.5vw;
+    max-width: 56.5vw;
+    min-height: 28.3vw;
+    max-height: 28.3vw;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 4.5vw;
+    left: 1.8vw;
+    align-items: center;
+    /* transition: opacity 0.1s ease-in-out; */
+}
+
+div#contact-container-initial {
+    /* visibility: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 56.5vw;
+    max-width: 56.5vw;
+    min-height: 28.3vw;
+    max-height: 28.3vw;
+    position: absolute;
+    gap: 0.5vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+div#contact-container-initial img {
+    max-height: 10vw;
+    border-radius: 1vw;
+}
+
+div#contact-me {
+    font-family: league-bold;
+    font-size: 2.5vw;
+    color: #7735B2;
+}
+
+div#contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+    padding-top: 0.4vw;
+}
+
+div#contact-buttons a{
+    text-decoration: none;
+    padding: 0.3vw;
+}
+div#contact-buttons a i{
+    font-size: 1.3vw;
+    color: #b86c6b;
+}
+div#contact-buttons a:hover{
+    transition: 0.5s;
+}
+div#contact-buttons a i:hover{
+    color: #7735B2;
+    transition: 0.5s;
+}
+
+.contact-texts {
+    font-family: league-reg;
+    font-size: 1vw;
+    color: #7835b2;
+}
+
+.contact-divs {
+    background-color: #ffeaea;
+    padding: 0.5vw 1vw;
+    border: 0.1vw solid #ffcbcb;
+    border-radius: .5vw;
+    min-width: 12vw;
+    max-height: fit-content;
+}
+
+.contact-text-buttons {
+    font-family: league-reg;
+    font-size: 1vw;
+    color: #ffeaea;
+    background-color: #b86c6b;
+    padding: 0.3vw 0.5vw;
+    border-radius: 0.5vw;
+    text-decoration: none;
+}
+
+.contact-text-buttons:hover {
+    background-color: #7735B2;
+    transition: 0.5s;
+}
+
+#ewanhuhu {
+    text-align: center;
+    padding-top: 1vw;
+}
+
+#contact-container-right {
+    visibility: hidden;
+}
+
+div#contact-container-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 56.5vw;
+    max-width: 56.5vw;
+    min-height: 28.3vw;
+    max-height: 28.3vw;
+    position: absolute;
+    gap: 0.5vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+}
+
