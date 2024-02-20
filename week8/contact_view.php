@@ -40,6 +40,16 @@
     </div> 
 
     <!-- SELECT DATA CODE -->
+<!-- 
+    <div id="contact-view-content">
+        <div id="contact-view-win">
+            <img id="contact-view-win" src="resources/windows/contact view window.png">
+
+            <div id="contact-view-container">
+
+            </div>
+        </div>
+    </div> -->
 
     <?php
 
@@ -62,17 +72,32 @@
         die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT id, name, email, comment, gender FROM myguests";
+        $sql = "SELECT id, name, email, comment, gender, reg_date FROM myguests";
         $result = $conn->query($sql);
+
+            echo '<div id="contact-view-content">';
+            echo '<div id="contact-view-win">';
+            echo '<img id="contact-view-win" src="resources/windows/contact view window.png">';
+            echo '<div id="contact-view-container">';
 
         if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
-            echo "Name: " . $row["name"]. "<br>Email: " . $row["email"]. "<br>Comment: " . $row["comment"]. "<br>Gender: " . $row["gender"]. "<br>";
+            
+            echo '<div class="guest-bg">';
+            echo "<h4>" . $row["name"]. "</h4><h6>&#12539;:&#12291;&#10140; " . $row["email"]. "</h6><h6>&#12539;:&#12291;&#10140; " . $row["gender"]. "</h6><h6>&#12539;:&#12291;&#10140; " . $row["reg_date"]. "</h6><p>&#10077;" . $row["comment"]. "&#10078;</p>";
+            echo '</div>';
+            
         }
+            echo '</div>';
+            echo '</div>';
+            echo '</div>';
+
         } else {
         echo "0 results";
         }
         $conn->close();
-        
+
     ?>
+</body>
+</html>

@@ -79,3 +79,63 @@ div {
 
 /* CONTENT */
 
+div#contact-view-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    position: relative;
+}
+
+div#contact-view-win {
+    position: relative;
+}
+
+img#contact-view-win {
+    width: 60vw;
+}
+
+div#contact-view-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 56.5vw;
+    max-width: 56.5vw;
+    /* min-height: 28.3vw;
+    max-height: 28.3vw; */
+    height: 28.3vw;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 4.5vw;
+    left: 1.8vw;
+    align-items: center;
+}
+
+.guest-bg {
+    background-color: #ffe4e4;
+    border-radius: 0.5vw;
+    box-shadow: .2vw .2vw .3vw rgba(0, 0, 0, 0.363);
+    padding: 1vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.3vw;
+    min-width: 50vw;
+    max-width: 50vw;
+    font-family: dogicapixel;
+    line-height: 1.5;
+}
+
+.guest-bg h4 {
+    color: rgb(130, 67, 189);
+    font-size: 0.85vw;
+}
+
+.guest-bg h6 {
+    color: #292b99b6;
+    font-size: 0.5vw;
+}
+
+.guest-bg p {
+    color: rgb(150, 53, 53);
+    font-size: 0.8vw;
+    margin: 1vw 1vw 0 1vw;
+    overflow-wrap: break-word;
+}
