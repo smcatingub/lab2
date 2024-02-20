@@ -95,22 +95,23 @@ div#contact-win {
 }
 
 img#contact-win {
-    width: 60vw;
+    margin-top: 1vw;
+    width: 25vw;
 }
 
 div#contact-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    min-width: 56.5vw;
-    max-width: 56.5vw;
+    min-width: 23vw;
+    max-width: 23vw;
     min-height: 28.3vw;
     max-height: 28.3vw;
     position: absolute;
     overflow-y: auto;
     overflow-x: hidden;
-    top: 4.5vw;
-    left: 1.8vw;
+    top: 4.1vw;
+    left: 1vw;
     align-items: center;
     /* transition: opacity 0.1s ease-in-out; */
 }
