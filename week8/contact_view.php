@@ -40,16 +40,6 @@
     </div> 
 
     <!-- SELECT DATA CODE -->
-<!-- 
-    <div id="contact-view-content">
-        <div id="contact-view-win">
-            <img id="contact-view-win" src="resources/windows/contact view window.png">
-
-            <div id="contact-view-container">
-
-            </div>
-        </div>
-    </div> -->
 
     <?php
 

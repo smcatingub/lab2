@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: dogicapixel;
+    src: url(../resources/fonts/dogica/TTF/dogicapixel.ttf);
+}
+
+@font-face {
+    font-family: league-reg;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Regular.ttf);
+}
+@font-face {
+    font-family: league-bold;
+    src: url(../resources/fonts/League_Spartan/LeagueSpartan-Bold.ttf);
+}
+@keyframes blink {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+}
+@keyframes fade-in {
+    to {opacity: 1;}
+}
+body {
+    background-image: url("../resources/main\ background.png");
+	background-size: 100%;
+    overflow-x: hidden;
+}
+#navbar {
+    background-image: url("../resources/header bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: sticky;
+    width: 100vw;
+    overflow: hidden;
+}
+#folders {
+    max-height: 6vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 24vw;
+    padding-right: 12vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    overflow: hidden;
+}
+.nav {
+    width: 3.5vw;
+    margin: 1vw;
+}
+div {
+    display: block;
+}
+.icons {
+    position: relative;
+    display: inline-block;
+    padding-top: 1vw;
+}
+.orig-image, .hover-image {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    height: auto;
+}
+.hover-image {
+    position: absolute;
+    top: 1vw;
+    left: 0;
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .orig-image {
+    opacity: 0;
+    transform: scale(1);
+}
+.icons:hover .hover-image {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* content */
+
+#misc-content {
+    font-family: league-reg;
+    color: rgb(99, 99, 99);
+    overflow: hidden;
+}
+
+.references {
+    margin: 3.125vw auto;
+    width: 31.25vw;
+}
+
+.references li {
+    list-style: none;
+    width: 100%;
+    margin: 1vw;
+    padding: 0.5vw;
+    border-radius: 0.4vw;
+    background-color: #e3edf7;
+    box-shadow: 0.3vw 0.3vw 0.5vw -0.025vw rgba(0, 0, 0, 0.15),
+                -0.3vw -0.3vw 0.5vw -0.025vw rgba(255, 255, 255, 0.7);
+}
+
+.references li label {
+    display: flex;
+    align-items: center;
+    padding: 0.5vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+label::before {
+    content: '+';
+    margin-right: 0.5vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.references .content {
+    color: #555;
+    font-size: 0.9vw;
+    padding: 0 0.5vw;
+    line-height: 1.35vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    overflow-x: hidden;
+}
+
+.references input[type="radio"]:checked + label + .content {
+    max-height: 20vw;
+    padding: 0.5vw 0.5vw 1vw;
+}
+
+.references input[type="radio"]:checked + label::before {
+    content: '-';
+
+}
+
+.inside-list {
+    list-style-type: circle;
+}
