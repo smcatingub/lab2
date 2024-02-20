@@ -20,15 +20,15 @@
                 <img class="nav orig-image" src="resources/folder icons/3 shane.png">
                 <img class="nav hover-image" src="resources/folder icons/4 shane.png">
             </a>
-            <a class="icons" href="#">
+            <a class="icons" href="about.html">
                 <img class="nav orig-image" src="resources/folder icons/5 about.png">
                 <img class="nav hover-image" src="resources/folder icons/6 about.png">
             </a>
-            <a class="icons" href="#">
+            <a class="icons" href="interests.html">
                 <img class="nav orig-image" src="resources/folder icons/7 interests.png">
                 <img class="nav hover-image" src="resources/folder icons/8 interests.png">
             </a>
-            <a class="icons" href="#">
+            <a class="icons" href="contact.html">
                 <img class="nav orig-image" src="resources/folder icons/9 contact.png">
                 <img class="nav hover-image" src="resources/folder icons/10 contact.png">
             </a>
@@ -41,7 +41,7 @@
 
     <div id="ewanhuhu">
         <a id="contact-back" class="contact-text-buttons" href="contact.html">back</a>
-        <a id="contact-view" class="contact-text-buttons" href="#">view feedbacks</a>
+        <a id="contact-view" class="contact-text-buttons" href="contact_view.php">view feedbacks</a>
     </div>
 
     <?php

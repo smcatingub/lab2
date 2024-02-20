@@ -12,7 +12,7 @@
 <body>
     <div id="navbar">
         <div id="folders">
-            <a class="icons" href="#">
+            <a class="icons" href="index.html">
                 <img class="nav orig-image" src="resources/folder icons/1 home.png">
                 <img class="nav hover-image" src="resources/folder icons/2 home.png">
             </a>
@@ -28,7 +28,7 @@
                 <img class="nav orig-image" src="resources/folder icons/7 interests.png">
                 <img class="nav hover-image" src="resources/folder icons/8 interests.png">
             </a>
-            <a class="icons" href="#">
+            <a class="icons" href="contact.html">
                 <img class="nav orig-image" src="resources/folder icons/9 contact.png">
                 <img class="nav hover-image" src="resources/folder icons/10 contact.png">
             </a>
